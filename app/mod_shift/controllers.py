@@ -11,13 +11,14 @@ from app import db
 # Import module forms
 # from app.mod_auth.forms import LoginForm
 
-# # Import module models (i.e. User)
+# Import module models (i.e. User)
 # from app.mod_auth.models import User
-
+from app.mod_shift.models import Shift
 
 
 # # Define the blueprint: 'auth', set its url prefix: app.url/auth
 # mod_auth = Blueprint('auth', __name__, url_prefix='/auth')
+mod_shift = Blueprint('shift', __name__, url_prefix='/shift')
 
 # # Set the route and accepted methods
 # @mod_auth.route('/signin/', methods=['GET', 'POST'])

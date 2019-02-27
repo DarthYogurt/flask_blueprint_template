@@ -23,14 +23,14 @@ def not_found(error):
 # from app.mod_auth.controllers import mod_auth as auth_module
 from app.mod_tech.controllers import mod_tech as tech_module
 from app.mod_category.controllers import mod_category as category_module
-
-
+from app.mod_shift.controllers import mod_shift as shift_module
 
 # Register blueprint(s)
 # app.register_blueprint(auth_module)
 # app.register_blueprint(xyz_module)
 app.register_blueprint(tech_module)
 app.register_blueprint(category_module)
+app.register_blueprint(shift_module)
 
 
 
